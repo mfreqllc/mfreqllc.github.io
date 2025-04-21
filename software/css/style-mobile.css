@@ -1,0 +1,507 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body
+	{
+		line-height: 1.5em;
+		font-size: 10.25pt;
+		letter-spacing: 0;
+	}
+
+	h2, h3, h4, h5, h6
+	{
+		font-size: 1.5em;
+	}
+
+	section,
+	article
+	{
+		clear: both;
+	}
+	
+	.button
+	{
+		display: block;
+		font-size: 1.20em;
+		padding: 1em 2.2em 1em 2.2em;
+		letter-spacing: -0.035em;
+		margin: 1em 0 0 0;
+	}
+
+	ul.style1
+	{
+	}
+	
+		ul.style1 li
+		{
+			clear: both;
+			padding: 0.75em 0em;
+			border-top: 1px solid #2f2f2f;
+		}
+		
+	ul.style3
+	{
+	}
+		
+		ul.style3 li 
+		{
+			clear: both;
+			padding: 0px 0px 5px 0px;
+		}
+
+		ul.style3-alt li 
+		{
+			clear: both;
+			padding: 0px 0px 10px 0px;
+		}
+
+		ul.style3-alt .date
+		{
+			margin-bottom: 3em;
+		}
+	
+		ul.style3 h3
+		{
+			padding: 0em 0em 5px 0em;
+			font-size: 1.0em;
+		}
+		
+		ul.style3-alt h3
+		{
+		}
+		
+	.title h2
+	{
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 2em;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #2a2a2a;
+	}
+
+		.title h2:after
+		{
+			content:" ";
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			margin: 0 0 0 30px;
+			top: 8px;
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: #e5e5e5;
+		}	
+
+	.box
+	{
+		border-bottom: 1px solid #ececec;
+	}
+
+	.box-post
+	{
+		overflow: hidden;
+		padding: 1em 0em 3em 0em;
+	}
+	
+		.box-post header
+		{
+			margin-bottom: 2em;
+		}
+	
+		.box-post h2
+		{
+			font-size: 1.5em;
+			font-weight: 600;
+			color: #2a2a2a;
+		}
+		
+		.box-post .posted
+		{
+			display: block;
+		}
+
+		.box-post .image-left
+		{
+			float: none;
+			width: 100%;
+			margin-right: 0;
+		}
+
+/*********************************************************************************/
+/* Mobile UI                                                                     */
+/*********************************************************************************/
+
+	#mobileUI-site-titlebar
+	{
+		background: #151515 url(images/bg01.png) repeat;
+		box-shadow: inset 0px -2px 2px 0px rgba(0,0,0,0.15);
+	}
+
+	#mobileUI-site-title
+	{
+		line-height: 44px;
+		text-decoration: none;
+		font-size: 1.2em;
+		font-weight: 600;
+		color: #FFF;
+	}
+
+	#mobileUI-site-nav-opener
+	{
+		text-indent: -9999em;
+		width: 60px;
+		height: 44px;
+	}
+
+		#mobileUI-site-nav-opener:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 44px;
+			height: 44px;
+			background: url('images/mobileUI-site-nav-opener-bg.svg') 8px 14px no-repeat;
+		}
+
+		#mobileUI-site-nav-opener:active
+		{
+		}
+
+	#mobileUI-site-nav
+	{
+		background: #151515;
+		box-shadow: inset -2px 0px 3px 1px rgba(0,0,0,0.5);
+	}
+
+		#mobileUI-site-nav:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: url('images/bg01.png');
+			z-index: 1;
+		}
+
+	#mobileUI-site-nav-inner
+	{
+		position: relative;
+		z-index: 2;
+	}
+
+	.mobileUI-site-nav-link
+	{
+		display: block;
+		color: #999;
+		font-weight: 600;
+		text-decoration: none;
+		height: 44px;
+		line-height: 44px;
+		border-top: 1px solid rgba(0,0,0,0.35);
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.035);
+		padding: 0 1.5em 0 1.5em;
+	}
+
+	.mobileUI-site-nav-link-depth-0
+	{
+		color: #fff;
+	}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		display: none;
+	}
+	
+	#banner-wrapper
+	{
+		padding: 3em 3em 3.5em 3em;
+	}
+
+	#top-bar-wrapper
+	{
+		padding: 10px 15px 10px 15px;
+	}
+
+		/*
+			The rule below hides the top bar's byline since it takes up a fair bit of vertical 
+			space in mobile mode. If you want the byline to show up, simply delete the rule.
+		*/
+
+		#top-bar-wrapper p
+		{
+			display: none;
+		}
+	
+	#main-wrapper
+	{
+		padding: 3em 15px 3em 15px;
+	}
+	
+	#bottom-bar-wrapper
+	{
+		padding: 15px;
+	}
+
+	#footer-wrapper
+	{
+		padding: 3em 15px 3em 15px;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		display: none;
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		overflow: hidden;
+		position: relative;
+		text-align: center;
+		z-index: 10;
+	}
+	
+		#banner h2
+		{
+			letter-spacing: -1px;
+			font-size: 3em;
+			color: #FFFFFF;
+			line-height: 1.25em;
+			margin: 0 0 0.5em 0;
+		}
+		
+		#banner p
+		{
+			font-size: 1.1em;
+			color: #adadad;
+			margin: 0 0 2em 0;
+		}
+		
+			#banner p br
+			{
+				display: none;
+			}
+	
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		overflow: hidden;
+	}
+
+		#footer header
+		{
+			margin-bottom: 2em;
+		}
+		
+		#footer header h2
+		{
+			overflow: hidden;
+			position: relative;
+			font-weight: 600;
+			font-size: 1.2em;
+			color: #FFFFFF;
+		}
+
+			#footer header h2:after
+			{
+				content:" ";
+				position: absolute;
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-color: #2f2f2f;
+				width: 100%;
+				height: 4px;
+				margin: 0 0 0 30px;
+				top: 10px;
+			}
+		
+		#footer section
+		{
+			margin: 0 0 3em 0;
+		}
+
+/*********************************************************************************/
+/* Main                                                                          */
+/*********************************************************************************/
+
+	#main
+	{
+		overflow: hidden;
+	}
+	
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+	
+	#content .image
+	{
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+	}
+
+	#sidebar header
+	{
+	}
+	
+	#sidebar section
+	{
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright 
+	{
+		padding: 3em 0 0 0;
+	}
+	
+		#copyright span
+		{
+			padding: 1.20em 2em;
+		}
+	
+/*********************************************************************************/
+/* Searchbox                                                                     */
+/*********************************************************************************/
+
+	#searchbox
+	{
+		position: relative;
+	}
+	
+		#searchbox .text
+		{
+			width: 100%;
+			padding: 0.85em 3.25em 0.85em 0.75em;
+			font-size: 1em;
+			background: #e7e7e7 url(images/bg01.png) repeat;
+			outline: none;
+			border: 0;
+			border-radius: 5px;
+			border: 1px solid #d6d6d6;
+			font-family: 'Source Sans Pro', sans-serif;
+			font-weight: 300;
+			color: #6c6c6c;
+		}
+		
+		#searchbox .submit
+		{
+			position: absolute;
+			width: 3em;
+			height: 3em;
+			border: 0;
+			right: 5px;
+			top: 3px;
+			display: block;
+			border: 0;
+			background: url(images/icons.png) no-repeat;
+			background-position: -280px 0;
+			text-indent: -9999em;
+		}
+
+/*********************************************************************************/
+/* Featured                                                                      */
+/*********************************************************************************/
+
+	#featured
+	{
+	}
+	
+		#featured section
+		{
+			margin-bottom: 2em;
+		}
+	
+		#featured header
+		{
+			overflow: hidden;
+			margin-bottom: 1em;
+		}
+		
+		#featured header h2
+		{
+			font-size: 1.2em;
+			font-weight: 600;
+		}
+		
+		#featured .image
+		{
+			margin-bottom: 1em;
+		}
+
+		.featured-heading
+		{
+			overflow: hidden;
+			position: relative;
+			margin-bottom: 1em;
+			padding: 0em 0em 1em 1em;
+			font-size: 1.20em;
+			letter-spacing: -1px;
+			text-align: center;
+			font-weight: 600;
+			color: #2a2a2a;
+		}
+		
+		.featured-heading:before
+		{
+			content: " ";
+			position: absolute;
+			width: 20%;
+			height: 4px;
+			top: 8px;
+			left: 0;
+			margin: 0em 0em 0em 0em;
+			border-top: 1px solid #e5e5e5;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.featured-heading:after
+		{
+			content: " ";
+			position: absolute;
+			width: 50%;
+			top: 8px;
+			height: 4px;
+			margin-left: 2em;
+			border-top: 1px solid #e5e5e5;
+			border-bottom: 1px solid #e5e5e5;
+		}
